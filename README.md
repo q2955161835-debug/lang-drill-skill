@@ -31,7 +31,7 @@ LangDrill Skill 是一个面向语言学习场景的通用 agent skill。它把 
 - 已内置日语资料：大学日语四级 2023 考纲、高中日语 2020 课程/词法资源。
 - 英语资料：预留 `data/kb/english/`，需要在用户确认考试目标后导入对应考纲。
 - 个人历史：已清空。模板数据库只保留可复用考纲与资料索引。
-- 发布协议：CC BY-NC 4.0，允许非商业共享与改编，商业使用需要额外授权。
+- 发布协议：MIT License，允许使用、复制、修改、分发、再授权和商业使用。
 
 ## 工作流
 
@@ -152,6 +152,6 @@ py .\scripts\grade_answer.py --question-id 1 --user-answer A
 
 ## 许可证
 
-本项目采用 Creative Commons Attribution-NonCommercial 4.0 International License（CC BY-NC 4.0）。
+本项目采用 MIT License。
 
-你可以在非商业目的下共享和改编本项目，但必须按许可证要求保留署名、许可证链接，并标明是否作出修改。未经额外授权，不得将本项目用于商业目的。详见 `LICENSE` 与 `ATTRIBUTION.md`。
+你可以自由使用、复制、修改、合并、发布、分发、再授权和商业使用本项目，但必须在副本或重要部分中保留版权声明和许可证声明。详见 `LICENSE`。
