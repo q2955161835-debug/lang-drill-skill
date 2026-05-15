@@ -1,0 +1,21 @@
+[
+  {
+    "exam_name": "大学日语四级历年真题聚合页",
+    "year": "2011-2025",
+    "level": "cjt4",
+    "section": "historical_archive_listing",
+    "source_status": "third_party_listing",
+    "source_path": "https://www.fuertiku.com/cjt4/",
+    "notes": "第三方聚合页。页面说明覆盖 2011-2025 年，格式含 PDF 和听力 MP3，下载方式为网盘链接。适合作为年份索引线索，不直接视为官方原件。"
+  },
+  {
+    "exam_name": "日语历年真题总入口中的CJT4条目",
+    "year": "2020,2022,2023,2024,2025",
+    "level": "cjt4",
+    "section": "year_listing",
+    "source_status": "third_party_listing",
+    "source_path": "https://www.ifoor.com/riyu/",
+    "notes": "第三方日语真题总入口。当前页面可见 2020、2022、2023、2024、2025 年 CJT4 条目，均标注含听力音频、原文、答案解析。"
+  }
+]
+

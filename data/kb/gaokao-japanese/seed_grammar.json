@@ -1,0 +1,33 @@
+[
+  {
+    "pattern": "〜ている",
+    "meaning_cn": "正在……；处于……状态",
+    "core_usage": "表示动作进行或结果状态持续",
+    "example": "今、日本語を勉強している。",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 1,
+    "confusable_with": "〜てある"
+  },
+  {
+    "pattern": "〜つもりだ",
+    "meaning_cn": "打算……",
+    "core_usage": "表示计划或主观打算",
+    "example": "今日は新しい単語を十個覚えるつもりだ。",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 1,
+    "confusable_with": "〜予定だ"
+  },
+  {
+    "pattern": "〜ながら",
+    "meaning_cn": "一边……一边……",
+    "core_usage": "表示两个动作同时进行",
+    "example": "音楽を聞きながら単語を覚える。",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 2,
+    "confusable_with": "〜間"
+  }
+]
+

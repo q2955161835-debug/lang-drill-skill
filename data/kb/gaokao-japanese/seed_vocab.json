@@ -1,0 +1,53 @@
+[
+  {
+    "term": "準備",
+    "reading": "じゅんび",
+    "meaning": "准备",
+    "pos": "名词/サ变",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 1,
+    "notes": "基础高频词"
+  },
+  {
+    "term": "必要",
+    "reading": "ひつよう",
+    "meaning": "必要",
+    "pos": "形容动词/名词",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 1,
+    "notes": "基础高频词"
+  },
+  {
+    "term": "続ける",
+    "reading": "つづける",
+    "meaning": "继续，坚持",
+    "pos": "一段动词",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 2,
+    "notes": "常见学习场景词"
+  },
+  {
+    "term": "約束",
+    "reading": "やくそく",
+    "meaning": "约定，约会，承诺",
+    "pos": "名词/サ变",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 2,
+    "notes": "阅读常见词"
+  },
+  {
+    "term": "比べる",
+    "reading": "くらべる",
+    "meaning": "比较",
+    "pos": "一段动词",
+    "source_scope": "gaokao",
+    "source_type": "seed",
+    "difficulty": 2,
+    "notes": "阅读和写作常见词"
+  }
+]
+

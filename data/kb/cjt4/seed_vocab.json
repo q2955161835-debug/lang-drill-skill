@@ -1,0 +1,53 @@
+[
+  {
+    "term": "能力",
+    "reading": "のうりょく",
+    "meaning": "能力",
+    "pos": "名词",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 2,
+    "notes": "考试高频抽象词"
+  },
+  {
+    "term": "影響",
+    "reading": "えいきょう",
+    "meaning": "影响",
+    "pos": "名词/サ变",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 2,
+    "notes": "阅读高频词"
+  },
+  {
+    "term": "求める",
+    "reading": "もとめる",
+    "meaning": "寻求；要求",
+    "pos": "一段动词",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 3,
+    "notes": "阅读与翻译常见词"
+  },
+  {
+    "term": "対応",
+    "reading": "たいおう",
+    "meaning": "对应；应对",
+    "pos": "名词/サ变",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 3,
+    "notes": "综合题高频词"
+  },
+  {
+    "term": "実現",
+    "reading": "じつげん",
+    "meaning": "实现",
+    "pos": "名词/サ变",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 3,
+    "notes": "写作与阅读常见词"
+  }
+]
+
