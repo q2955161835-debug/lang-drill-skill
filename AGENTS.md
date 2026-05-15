@@ -47,3 +47,10 @@
 - `data/kb/material-inbox/` 用于放待导入的考纲、真题、教材或词表原始资料。
 - 历年真题默认先建立索引和导入口，不把来源不明的完整试题全文作为默认系统资产。
 - 工具日志只用于调试，不是学习数据事实来源；正式学习状态以 `data/study.db` 为准。
+
+## 8. 授权与发布
+
+- 本项目采用 PolyForm Noncommercial License 1.0.0。
+- 未经明确书面授权，禁止商业使用、商用集成、售卖、企业内部商业业务使用或付费平台分发。
+- 发布前必须保留 `LICENSE`、`NOTICE`、`COMMERCIAL_LICENSE.md` 与 `README.md` 中的授权说明。
+- 对外描述时使用“source-available / 非商用授权”，不要误称为 OSI 意义上的开源许可证。
