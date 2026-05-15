@@ -50,7 +50,7 @@
 
 ## 8. 授权与发布
 
-- 本项目采用 PolyForm Noncommercial License 1.0.0。
-- 未经明确书面授权，禁止商业使用、商用集成、售卖、企业内部商业业务使用或付费平台分发。
-- 发布前必须保留 `LICENSE`、`NOTICE`、`COMMERCIAL_LICENSE.md` 与 `README.md` 中的授权说明。
-- 对外描述时使用“source-available / 非商用授权”，不要误称为 OSI 意义上的开源许可证。
+- 本项目采用 Creative Commons Attribution-NonCommercial 4.0 International License（CC BY-NC 4.0）。
+- CC BY-NC 4.0 允许非商业目的下共享和改编，但必须保留署名、许可证链接，并标明是否作出修改；商业使用需要额外授权。
+- 发布前必须保留 `LICENSE`、`NOTICE`、`ATTRIBUTION.md` 与 `README.md` 中的授权说明。
+- 对外发布前继续确认维护记录、真实密钥、个人学习痕迹和本地日志没有进入发布分支。

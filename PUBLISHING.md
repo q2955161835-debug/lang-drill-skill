@@ -48,7 +48,7 @@ git push -u origin main
 - Display name: `语言刷题教练`
 - Short description: `根据考纲、学习背景和复习状态生成语言学习测验并回写进度`
 - Default prompt: `Use $lang-drill-coach to initialize my language-learning goal, import the syllabus, and run an exam-style drill session.`
-- License: PolyForm Noncommercial License 1.0.0
+- License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 ## Known Publication Boundary
 

@@ -8,7 +8,9 @@ __pycache__/
 dist/
 build/
 try/
-tmp/
+tmp/**
+!tmp/
+!tmp/README.md
 temp/
 *.log
 logs/**

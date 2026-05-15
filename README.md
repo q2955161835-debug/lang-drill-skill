@@ -75,8 +75,6 @@ py .\scripts\grade_answer.py --question-id 1 --user-answer A
 
 ## 许可证
 
-本项目采用 PolyForm Noncommercial License 1.0.0。
+本项目采用 Creative Commons Attribution-NonCommercial 4.0 International License（CC BY-NC 4.0）。
 
-你可以在非商业目的下查看、使用、修改和分发本项目。任何商业使用、商用集成、售卖、付费服务、企业内部业务使用或商业平台分发，都需要事先获得明确书面授权。详见 `LICENSE` 与 `COMMERCIAL_LICENSE.md`。
-
-注意：包含非商业限制的协议通常不属于 OSI 定义的开源许可证，更准确地说，本项目是 source-available / 非商用授权项目。
+你可以在非商业目的下共享和改编本项目，但必须按许可证要求保留署名、许可证链接，并标明是否作出修改。未经额外授权，不得将本项目用于商业目的。详见 `LICENSE` 与 `ATTRIBUTION.md`。
