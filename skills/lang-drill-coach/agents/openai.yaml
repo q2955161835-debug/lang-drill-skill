@@ -1,0 +1,7 @@
+interface:
+  display_name: "语言刷题教练"
+  short_description: "根据考纲、学习背景和复习状态生成语言学习测验并回写进度"
+  default_prompt: "Use $lang-drill-coach to initialize my language-learning goal, import the syllabus, and run an exam-style drill session."
+
+policy:
+  allow_implicit_invocation: true

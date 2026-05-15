@@ -1,0 +1,30 @@
+[
+  {
+    "exam_name": "高考日语历年真题打包线索",
+    "year": "2002-2022",
+    "level": "gaokao",
+    "section": "historical_archive_listing",
+    "source_status": "third_party_listing",
+    "source_path": "https://www.sohu.com/a/628259705_121124300",
+    "notes": "第三方教育公众号文章。文中说明打包了 2002-2022 年高考日语历年真题，并包含 2022 真题、答案、作文范文、听力原文与 MP3，获取方式为公众号关键词。"
+  },
+  {
+    "exam_name": "高考日语真题完整版条目",
+    "year": "2025",
+    "level": "gaokao",
+    "section": "full_paper_listing",
+    "source_status": "third_party_listing",
+    "source_path": "https://www.ifoor.com/gaokao/riyu/86414.html",
+    "notes": "第三方单年页面。页面预览了 2025 年高考日语真题并标注提供 PDF/WORD 与答案解析，下载通过网盘链接。"
+  },
+  {
+    "exam_name": "高考真题总入口中的日语条目",
+    "year": "2024,2025",
+    "level": "gaokao",
+    "section": "year_listing",
+    "source_status": "third_party_listing",
+    "source_path": "https://www.ifoor.com/gaokao/",
+    "notes": "第三方高考真题总入口。搜索快照显示页面当前至少列出了 2024 年和 2025 年高考日语真题（完整版）及答案解析。"
+  }
+]
+

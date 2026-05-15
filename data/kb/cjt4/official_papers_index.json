@@ -1,0 +1,29 @@
+[
+  {
+    "exam_name": "大学日语四级考试官方样卷",
+    "year": "2023",
+    "level": "cjt4",
+    "section": "full_sample",
+    "source_status": "official_public",
+    "source_path": "D:\\0文件夹\\日语四级\\data\\kb\\material-inbox\\official\\cjt4_syllabus_2023.pdf",
+    "notes": "来源于《全国大学日语四、六级考试大纲（2023年版）》；样卷页码 142-161。"
+  },
+  {
+    "exam_name": "大学日语四级考试官方样卷听力文字稿",
+    "year": "2023",
+    "level": "cjt4",
+    "section": "listening_transcript",
+    "source_status": "official_public",
+    "source_path": "D:\\0文件夹\\日语四级\\data\\kb\\material-inbox\\official\\cjt4_syllabus_2023.pdf",
+    "notes": "来源于《全国大学日语四、六级考试大纲（2023年版）》；听力文字稿页码 162-168。"
+  },
+  {
+    "exam_name": "大学日语四级考试官方样卷标准答案",
+    "year": "2023",
+    "level": "cjt4",
+    "section": "answer_key",
+    "source_status": "official_public",
+    "source_path": "D:\\0文件夹\\日语四级\\data\\kb\\material-inbox\\official\\cjt4_syllabus_2023.pdf",
+    "notes": "来源于《全国大学日语四、六级考试大纲（2023年版）》；标准答案页码 169-172。"
+  }
+]

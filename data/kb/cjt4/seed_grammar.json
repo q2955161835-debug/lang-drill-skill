@@ -1,0 +1,33 @@
+[
+  {
+    "pattern": "〜に違いない",
+    "meaning_cn": "一定……；肯定……",
+    "core_usage": "表示说话人依据较强根据做出判断",
+    "example": "あの努力なら、合格できるに違いない。",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 3,
+    "confusable_with": "〜はずだ"
+  },
+  {
+    "pattern": "〜ようにする",
+    "meaning_cn": "努力做到……",
+    "core_usage": "表示有意识地养成习惯或采取行动",
+    "example": "毎日日本語の文章を読むようにしている。",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 2,
+    "confusable_with": "〜ことにする"
+  },
+  {
+    "pattern": "〜ば〜ほど",
+    "meaning_cn": "越……越……",
+    "core_usage": "表示程度随条件变化而变化",
+    "example": "練習すればするほど、読む力が上がる。",
+    "source_scope": "cjt4",
+    "source_type": "seed",
+    "difficulty": 3,
+    "confusable_with": "〜につれて"
+  }
+]
+
