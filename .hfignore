@@ -1,0 +1,13 @@
+.git/
+.env
+.env.*
+!.env.example
+try/
+tmp/**
+logs/**
+__pycache__/
+*.pyc
+.pytest_cache/
+data/study.db-shm
+data/study.db-wal
+doc/进展记录.md

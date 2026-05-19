@@ -1,6 +1,6 @@
 ---
 name: lang-drill-coach
-description: Universal language-learning drill coach for agentic coding assistants. Use when Codex/OpenClaw/Claude Code should become a language tutor that initializes a learner profile, imports or researches exam syllabi, stores vocabulary and grammar ranges, generates exam-style practice questions, runs one-question-at-a-time quizzes, grades answers, updates spaced-review state, maintains wrong-answer records, and supports Japanese or English exam preparation from a local SQLite-backed project.
+description: Agent skill for language learning, exam prep, vocabulary drills, grammar drills, one-question-at-a-time quizzes, spaced repetition, wrong-answer review, syllabus import, and SQLite-backed progress tracking. Use when Codex, Claude Code, OpenClaw, Cursor, or OpenCode should coach Japanese, English, or another target-language exam by first creating a learner profile, then importing official/reliable syllabus assets, authoring exam-style practice, grading answers, and updating long-term review state.
 ---
 
 # Lang Drill Coach
@@ -11,7 +11,8 @@ Use this skill inside the `lang-drill-skill` project to turn an agent into a lan
 
 Default supported languages:
 - Japanese: reusable CJT4 2023 and high-school Japanese 2020 syllabus assets are bundled.
-- English: create or import a target exam syllabus before formal drills.
+- English: use `data/kb/english/` and import the chosen exam syllabus before formal drills.
+- Other target languages: copy `data/kb/language-template/`, create an exam folder, and provide vocabulary, grammar, and exam-blueprint assets with source year.
 
 ## Startup Checklist
 
@@ -30,10 +31,10 @@ Before generating questions or touching learning data:
 Use official or reliable public materials whenever possible.
 
 1. Place raw local materials in `data/kb/material-inbox/`.
-2. Convert syllabus vocabulary and grammar into structured JSON/CSV under `data/kb/<exam-id>/`.
+2. Convert syllabus vocabulary and grammar into structured JSON/CSV under `data/kb/<exam-id>/`. Use `data/kb/language-template/README.md` for non-bundled languages or exams.
 3. Import structured ranges into `data/study.db` with non-`user` `source_scope` values such as `cjt4`, `gaokao`, `cet4`, `ielts`, `toefl`, or another exam id.
 4. Mark each syllabus file with the exam name and year, for example `official_vocab_2023.json`.
-5. Define the target question types before generating drills. For Japanese CJT4, keep the bundled Japanese section shapes; for English exams, infer or import section shapes from the chosen exam.
+5. Define the target question types before generating drills. For bundled Japanese exams, keep the included section shapes; for English and other exams, infer or import section shapes from the chosen exam blueprint.
 6. Keep real papers as reference/index assets, not as default generated-question output.
 
 ## Daily Drill Workflow

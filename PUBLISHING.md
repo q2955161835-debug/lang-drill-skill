@@ -1,17 +1,28 @@
 # Publishing Checklist
 
-## Before GitHub
+## Discovery Rules We Optimize For
 
-- Confirm `git status --short` is clean.
-- Confirm `.env` does not exist in Git and `.env.example` contains placeholders only.
+`find-skill` searches a local catalogue by `name`, `description`, and `tags`, filters by compatible agent, then sorts with source trust and GitHub stars. Its installer first checks for a root `SKILL.md`; if absent, it searches up to four levels deep and may pick the first match in a monorepo.
+
+Therefore this project keeps:
+
+- Root `SKILL.md` for direct installer detection.
+- Keyword-rich frontmatter: `language learning`, `exam prep`, `vocabulary`, `grammar`, `spaced repetition`, `wrong-answer review`, `Japanese`, `English`, `Codex`, `Claude Code`.
+- A short GitHub/Hugging Face README path for humans.
+- Canonical source at `skills/lang-drill-coach/` for local Codex publishing.
+
+## Before GitHub Or Hugging Face
+
+- Confirm `git status --short` has only intentional changes.
+- Confirm `.env` is not tracked and `.env.example` contains placeholders only.
+- Confirm root `SKILL.md` exists and has valid frontmatter.
 - Run sensitive-string scan for keys, tokens, cookies, private paths, and old personal traces.
 - Run skill validation:
 
 ```powershell
 $env:PYTHONUTF8='1'
-& "C:\Users\29551\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" `
-  C:\Users\29551\.codex\skills\.system\skill-creator\scripts\quick_validate.py `
-  .\skills\lang-drill-coach
+python C:\Users\29551\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\skills\lang-drill-coach
+python C:\Users\29551\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
 ```
 
 - Run script syntax check:
@@ -34,20 +45,44 @@ D:\2Folder\skills\lang-drill-coach
 
 ## Publish To GitHub
 
-Create a repository, add it as `origin`, then push:
+```powershell
+git push -u origin master
+```
+
+Recommended repository settings:
+
+- Description: `Agent skill for language exam drills, syllabus import, spaced review, grading, and SQLite-backed progress tracking.`
+- Website: Hugging Face mirror URL after upload.
+- Topics: `agent-skill`, `skill-md`, `codex`, `claude-code`, `language-learning`, `exam-prep`, `spaced-repetition`, `vocabulary`, `grammar`, `japanese`, `english`, `sqlite`.
+
+## Publish To Hugging Face
+
+Install/update the official Hub client if needed:
 
 ```powershell
-git remote add origin <github-repo-url>
-git branch -M main
-git push -u origin main
+python -m pip install -U huggingface_hub
 ```
+
+Login once with a token stored by the Hub client, not in this repo:
+
+```powershell
+hf auth login
+```
+
+Upload a synchronized public snapshot:
+
+```powershell
+python .\scripts\publish_huggingface.py --repo-id <namespace>/lang-drill-skill
+```
+
+The script respects the public boundary by ignoring `.env`, `try/`, `tmp/`, `logs/`, transient SQLite files, and `doc/进展记录.md`.
 
 ## Skill Marketplace Notes
 
-- Use `skills/lang-drill-coach/` as the canonical skill folder.
-- Display name: `语言刷题教练`
-- Short description: `根据考纲、学习背景和复习状态生成语言学习测验并回写进度`
-- Default prompt: `Use $lang-drill-coach to initialize my language-learning goal, import the syllabus, and run an exam-style drill session.`
+- Skill name: `lang-drill-coach`
+- Display name: `Lang Drill Coach`
+- Short description: `Exam-style language drills with syllabus import, spaced review, grading, and progress write-back`
+- Default prompt: `Use $lang-drill-coach to set up my target language exam, import the syllabus, and run a one-question-at-a-time drill session.`
 - License: MIT License
 
 ## Known Publication Boundary

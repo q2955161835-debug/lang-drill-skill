@@ -311,16 +311,15 @@ def ensure_column(conn: sqlite3.Connection, table: str, definition: str) -> None
 
 
 def seed_knowledge_base(conn: sqlite3.Connection) -> None:
-    seed_pairs = [
-        (ROOT / "data" / "kb" / "gaokao-japanese" / "official_vocab_2020.json", "vocab"),
-        (ROOT / "data" / "kb" / "gaokao-japanese" / "official_grammar_2020.json", "grammar"),
-        (ROOT / "data" / "kb" / "cjt4" / "official_vocab_2023.json", "vocab"),
-        (ROOT / "data" / "kb" / "cjt4" / "official_grammar_2023.json", "grammar"),
-        (ROOT / "data" / "kb" / "gaokao-japanese" / "seed_vocab.json", "vocab"),
-        (ROOT / "data" / "kb" / "gaokao-japanese" / "seed_grammar.json", "grammar"),
-        (ROOT / "data" / "kb" / "cjt4" / "seed_vocab.json", "vocab"),
-        (ROOT / "data" / "kb" / "cjt4" / "seed_grammar.json", "grammar"),
-    ]
+    kb_root = ROOT / "data" / "kb"
+    seed_pairs: list[tuple[Path, str]] = []
+    for pattern, mode in (
+        ("*/official_vocab_*.json", "vocab"),
+        ("*/seed_vocab.json", "vocab"),
+        ("*/official_grammar_*.json", "grammar"),
+        ("*/seed_grammar.json", "grammar"),
+    ):
+        seed_pairs.extend((path, mode) for path in sorted(kb_root.glob(pattern)))
     for path, mode in seed_pairs:
         if not path.exists():
             continue

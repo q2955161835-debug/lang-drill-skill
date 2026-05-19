@@ -13,7 +13,7 @@
    - preferred vocabulary/grammar entry method
 3. Update `data/background/student_profile.md`.
 4. Import or research the target exam syllabus. Record source name and year.
-5. Convert vocabulary, grammar, and question-type ranges into structured assets under `data/kb/<exam-id>/`.
+5. Convert vocabulary, grammar, and question-type ranges into structured assets under `data/kb/<exam-id>/`. Use `data/kb/language-template/README.md` for new language or exam schemas.
 6. Ask whether to index recent real papers as reference material.
 
 ## Normal Session
@@ -39,4 +39,5 @@
 
 - Japanese CJT4 2023 and high-school Japanese 2020 assets are included as reusable seeds.
 - English exam assets should be imported after the learner chooses an exam target.
+- Other target languages can use the same database and review flow once their syllabus assets follow the template schema.
 - File names should include the year, for example `official_vocab_2023.json`.
