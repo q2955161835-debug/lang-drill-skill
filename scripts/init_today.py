@@ -96,7 +96,7 @@ def main() -> None:
         for value in (target_language, exam_goal, daily_load)
     )
     onboarding_questions = [
-        "目标语言是什么？暂时支持日语和英语，其他语言也可先按同一流程建档。",
+        "目标语言是什么？日语和英语有现成入口，其他语言可按 `data/kb/language-template/` 建立考试资料后进入同一流程。",
         "考试目标或能力目标是什么？请给出考试名、级别、目标分或目标能力描述。",
         "考试/阶段截止时间是什么？格式建议为 YYYY-MM-DD HH:MM。",
         "你的学习背景和当前阶段是什么？例如刚开始背词、已学完一轮、薄弱项等。",

@@ -29,6 +29,8 @@ py .\scripts\import_vocab.py --file .\data\kb\<exam-id>\official_vocab_YYYY.json
 py .\scripts\import_grammar.py --file .\data\kb\<exam-id>\official_grammar_YYYY.json --source-scope <exam-id> --source-type syllabus
 ```
 
+For a new language or exam, copy the schemas from `data/kb/language-template/README.md`. JSON files named `official_vocab_*.json`, `official_grammar_*.json`, `seed_vocab.json`, or `seed_grammar.json` are automatically seeded when the database initializes.
+
 ## Select And Author A Session
 
 ```powershell
@@ -62,4 +64,10 @@ py .\scripts\sync_progress_snapshot.py `
 
 ```powershell
 py .\scripts\publish_skill.py
+```
+
+## Publish Hugging Face Mirror
+
+```powershell
+py .\scripts\publish_huggingface.py --repo-id <namespace>/lang-drill-skill
 ```
