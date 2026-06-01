@@ -12,6 +12,19 @@ One-off AI quizzes disappear into chat history. LangDrill keeps the useful state
 - English: ready entry folder at `data/kb/english/`; import the selected exam syllabus before formal drills.
 - Other target languages: copy `data/kb/language-template/`, add vocabulary, grammar, and an exam blueprint, then use the same workflow.
 
+## What Users Need To Configure
+
+Some fields intentionally remain marked as `待确认` or pending. They are not unfinished implementation defects. They are first-run configuration slots that must be filled by the actual learner or maintainer.
+
+Main configurable areas include:
+
+- `data/background/student_profile.md`: learner profile, including target language, exam goal, exam date, daily load, current level, weak areas, and preferences.
+- `data/kb/<exam-id>/`: target exam assets, including vocabulary, grammar, exam blueprint, source year, and source scope.
+- Learner-owned material: currently studied vocabulary, grammar patterns, textbook excerpts, mistakes, or teacher-assigned content.
+- Review and drill preferences: daily study time, question count, section ratio, reminder needs, explanation depth, and wrong-answer callback strength.
+
+In short, LangDrill provides a reusable drill system. The concrete language, exam target, workload, and source materials are meant to be configured per user.
+
 ## Quick Start
 
 ```powershell
@@ -20,7 +33,9 @@ cd lang-drill-skill
 py .\scripts\init_today.py
 ```
 
-Fill `data/background/student_profile.md`, then import a first item:
+After initialization, fill `data/background/student_profile.md`. If you see `待确认`, replace it with your actual learning target instead of treating it as a project defect.
+
+Then import a first item:
 
 ```powershell
 py .\scripts\import_vocab.py --text "example|pronunciation|meaning|noun|first item"
@@ -43,6 +58,12 @@ py .\scripts\publish_skill.py
 6. Ask one question at a time.
 7. Grade immediately and write back state.
 8. Reconcile mastery and audit the study day.
+
+## Configuration And Privacy Boundary
+
+- Templates may be public; real learner profiles, actual progress, private wrong-answer records, and local logs should not be published.
+- `.env`, real tokens, cookies, database passwords, and private endpoints must not be written into README files, examples, progress notes, or copyable chat snippets.
+- Real papers and textbook materials should default to indexes or source notes. Do not publish full copyrighted exam text unless redistribution rights are clear.
 
 ## Good Fit
 
