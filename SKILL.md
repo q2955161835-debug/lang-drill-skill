@@ -7,6 +7,17 @@ description: Agent skill for language learning, exam prep, vocabulary drills, gr
 
 Use this skill from the repository root. A nested copy also lives at `skills/lang-drill-coach/`; this root file exists so GitHub, Hugging Face, `find-skill`, and manual installers can discover the skill immediately.
 
+## Configuration Slots
+
+Fields marked as `待确认`, `未设置`, or `TBD` are intentional first-run configuration slots, not implementation defects. Replace them with the actual learner's language target, exam goal, deadline, daily load, preferences, weak areas, and material-entry method before formal drills.
+
+Reusable project assets and user-specific assets have different roles:
+
+- Reusable assets: bundled syllabus indexes, templates, scripts, skill instructions, and public examples.
+- User-specific assets: learner profile, private vocabulary/grammar input, real progress, wrong-answer history, reminders, and local logs.
+
+Keep user-specific data local unless it has been intentionally sanitized for publication.
+
 ## First Run
 
 1. Read `AGENTS.md` and `doc/项目局部规则.md`.
