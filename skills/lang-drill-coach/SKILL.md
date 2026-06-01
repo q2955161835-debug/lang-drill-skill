@@ -14,12 +14,23 @@ Default supported languages:
 - English: use `data/kb/english/` and import the chosen exam syllabus before formal drills.
 - Other target languages: copy `data/kb/language-template/`, create an exam folder, and provide vocabulary, grammar, and exam-blueprint assets with source year.
 
+## Configuration Slots
+
+Fields marked as `待确认`, `未设置`, or `TBD` are intentional first-run configuration slots, not implementation defects. Replace them with the actual learner's language target, exam goal, deadline, daily load, preferences, weak areas, and material-entry method before formal drills.
+
+Reusable project assets and user-specific assets have different roles:
+
+- Reusable assets: bundled syllabus indexes, templates, scripts, skill instructions, and public examples.
+- User-specific assets: learner profile, private vocabulary/grammar input, real progress, wrong-answer history, reminders, and local logs.
+
+Keep user-specific data local unless it has been intentionally sanitized for publication.
+
 ## Startup Checklist
 
 Before generating questions or touching learning data:
 1. Read `AGENTS.md`.
 2. Read `doc/项目局部规则.md`.
-3. Read the latest entry in `doc/进展记录.md`.
+3. Read the latest entry in `doc/进展记录.md` if it exists locally.
 4. Read `data/background/student_profile.md`.
 5. Run `py scripts/init_today.py` from the project root and report its initialization panel.
 6. If profile fields are incomplete, ask for: target language, exam/ability goal, current background, deadline, daily question load, preferences, current mastery, vocabulary-entry method, and reminder needs.
