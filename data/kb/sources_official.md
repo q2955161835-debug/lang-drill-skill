@@ -19,3 +19,8 @@
 - `data/kb/cjt4/historical_external_sources.json`：大学日语四级历史真题第三方聚合线索。
 - `data/kb/gaokao-japanese/historical_external_sources.json`：高考日语历史真题第三方聚合线索。
 - 说明：这些条目用于“找得到哪里有历史真题”的索引，不等同于官方原件，也不默认把整套真题全文纳入本地知识库。
+## 英语考试资料
+- 高考英语课标：`data/kb/material-inbox/official/highschool_english_curriculum_2020.pdf`，来源：`https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/202205/P020220517522153664167.pdf`。
+- CET 四、六级大纲：`data/kb/material-inbox/official/cet_syllabus_2016.pdf`，来源：`https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf`。
+- 2024 高考英语适应性测试页面：`data/kb/material-inbox/official/gaokao_english_adaptive_2024.html`，来源：`https://www.neea.edu.cn/html1/report/2401/499-1.htm`。
+- 近三年真题：仅写入 `paper_index` 和 `official_papers_index.json` 的索引/状态，不收录完整试题全文。

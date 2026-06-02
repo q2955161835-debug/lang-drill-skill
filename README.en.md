@@ -1,5 +1,7 @@
 # LangDrill Skill English Intro
 
+Current version: `0.2.0`.
+
 LangDrill Skill is an agent skill for language exam preparation and long-term review. It helps Codex, Claude Code, OpenClaw, Cursor, or OpenCode build a learner profile, import syllabus assets, author exam-style drills, grade one question at a time, and update spaced-review state.
 
 ## Problem
@@ -9,7 +11,7 @@ One-off AI quizzes disappear into chat history. LangDrill keeps the useful state
 ## Included Assets
 
 - Japanese: bundled CJT4 2023 and high-school Japanese 2020 resources.
-- English: ready entry folder at `data/kb/english/`; import the selected exam syllabus before formal drills.
+- English: bundled Gaokao English 2020 curriculum assets, CET-4/CET-6 2016 syllabus assets, exam blueprints, and recent-paper indexes.
 - Other target languages: copy `data/kb/language-template/`, add vocabulary, grammar, and an exam blueprint, then use the same workflow.
 
 ## What Users Need To Configure

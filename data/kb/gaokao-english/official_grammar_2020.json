@@ -1,0 +1,101 @@
+[
+  {
+    "pattern": "名词：可数名词、不可数名词、专有名词、名词所有格",
+    "meaning_cn": "词类与名词系统",
+    "core_usage": "词类与名词系统",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "动词：基本形式、及物/不及物、系动词、助动词、情态动词",
+    "meaning_cn": "词类与动词系统",
+    "core_usage": "词类与动词系统",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "形容词与副词：基本形式、比较级、最高级",
+    "meaning_cn": "词类与修饰关系",
+    "core_usage": "词类与修饰关系",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "代词、数词、介词、连词、冠词",
+    "meaning_cn": "基础词类与句法连接",
+    "core_usage": "基础词类与句法连接",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "句子种类：陈述句、疑问句、祈使句、感叹句",
+    "meaning_cn": "句式识别与表达",
+    "core_usage": "句式识别与表达",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "时态、语态、主谓一致",
+    "meaning_cn": "谓语结构",
+    "core_usage": "谓语结构",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "非谓语动词：动词不定式、动词-ing形式、过去分词",
+    "meaning_cn": "非谓语结构",
+    "core_usage": "非谓语结构",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "从句：定语从句、状语从句、名词性从句",
+    "meaning_cn": "复合句",
+    "core_usage": "复合句",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  },
+  {
+    "pattern": "直接引语与间接引语、省略、倒装、强调",
+    "meaning_cn": "特殊句式",
+    "core_usage": "特殊句式",
+    "example": "",
+    "source_scope": "gaokao-english",
+    "source_type": "official_curriculum_2020",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "普通高中英语课程标准（2017年版2020年修订）附录3语法项目一览。"
+  }
+]

@@ -5,6 +5,8 @@ description: Agent skill for language learning, exam prep, vocabulary drills, gr
 
 # Lang Drill Coach
 
+Version: `0.2.0`.
+
 Use this skill from the repository root. A nested copy also lives at `skills/lang-drill-coach/`; this root file exists so GitHub, Hugging Face, `find-skill`, and manual installers can discover the skill immediately.
 
 ## Configuration Slots
@@ -29,7 +31,7 @@ Keep user-specific data local unless it has been intentionally sanitized for pub
 ## Language And Exam Assets
 
 - Japanese seeds are bundled: CJT4 2023 and high-school Japanese 2020.
-- English has a ready entry folder at `data/kb/english/`.
+- English seeds are bundled: Gaokao English 2020, CET-4 2016, and CET-6 2016, with recent-paper indexes.
 - Other target languages are supported by copying `data/kb/language-template/` into a new exam folder and adding `official_vocab_YYYY.json`, `official_grammar_YYYY.json`, and `exam_blueprint_YYYY.json`.
 - The core script automatically seeds JSON files matching `data/kb/*/official_vocab_*.json`, `data/kb/*/official_grammar_*.json`, `seed_vocab.json`, and `seed_grammar.json`.
 

@@ -1,14 +1,11 @@
 # English Knowledge Base
 
-This directory is the ready entry point for English exam syllabi and reference materials.
+This directory documents English exam assets now available in sibling top-level KB folders:
 
-Create one subdirectory or file set per exam after the learner chooses a target, for example:
+- `data/kb/gaokao-english/`: Chinese Gaokao English curriculum vocabulary, grammar scope, blueprint, and recent-paper index.
+- `data/kb/cet4/`: CET-4 official 2016 syllabus vocabulary, skill scope, blueprint, and recent-paper index.
+- `data/kb/cet6/`: CET-6 official 2016 syllabus vocabulary, skill scope, blueprint, and recent-paper index.
 
-- `cet4/official_vocab_YYYY.json`
-- `ielts/official_vocab_YYYY.json`
-- `toefl/official_grammar_YYYY.json`
-- `exam_blueprint_YYYY.json`
+The core scripts seed top-level `data/kb/*/official_vocab_*.json` and `official_grammar_*.json` files into `data/study.db`.
 
-Use `data/kb/language-template/README.md` for the exact JSON/CSV shape. The core scripts automatically seed any JSON files named `official_vocab_*.json`, `official_grammar_*.json`, `seed_vocab.json`, or `seed_grammar.json` under `data/kb/*/`.
-
-Record the source name, year, and `source_scope` in every structured asset.
+近三年真题默认只保存索引和来源状态，不把版权状态不明的完整试题全文作为默认发布资产。

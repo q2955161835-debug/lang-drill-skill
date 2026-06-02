@@ -31,6 +31,15 @@ py .\scripts\import_grammar.py --file .\data\kb\<exam-id>\official_grammar_YYYY.
 
 For a new language or exam, copy the schemas from `data/kb/language-template/README.md`. JSON files named `official_vocab_*.json`, `official_grammar_*.json`, `seed_vocab.json`, or `seed_grammar.json` are automatically seeded when the database initializes.
 
+## Rebuild Official Knowledge Bases
+
+```powershell
+py .\scripts\build_official_kb.py
+py .\scripts\build_english_official_kb.py
+```
+
+The English builder imports Gaokao English, CET-4, and CET-6 vocabulary, grammar/skill scope, blueprints, and recent-paper indexes. Recent real papers are indexed as references, not bundled as full-text default assets.
+
 ## Select And Author A Session
 
 ```powershell

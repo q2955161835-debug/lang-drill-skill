@@ -1,0 +1,38 @@
+[
+  {
+    "exam_name": "大学英语六级近三年试卷索引",
+    "year": "2023",
+    "level": "cet6",
+    "section": "june_december_sessions",
+    "source_status": "indexed_pending_fulltext",
+    "source_path": "https://cet.neea.edu.cn/",
+    "notes": "近三年大学英语四、六级试卷索引；不收录完整试题全文。中国教育考试网官方项目页用于确认考试系列和大纲，历次真题全文如需使用应由用户提供可授权本地资料。"
+  },
+  {
+    "exam_name": "大学英语六级近三年试卷索引",
+    "year": "2024",
+    "level": "cet6",
+    "section": "june_december_sessions",
+    "source_status": "indexed_pending_fulltext",
+    "source_path": "https://cet.neea.edu.cn/",
+    "notes": "近三年大学英语四、六级试卷索引；不收录完整试题全文。中国教育考试网官方项目页用于确认考试系列和大纲，历次真题全文如需使用应由用户提供可授权本地资料。"
+  },
+  {
+    "exam_name": "大学英语六级近三年试卷索引",
+    "year": "2025",
+    "level": "cet6",
+    "section": "june_december_sessions",
+    "source_status": "indexed_pending_fulltext",
+    "source_path": "https://cet.neea.edu.cn/",
+    "notes": "近三年大学英语四、六级试卷索引；不收录完整试题全文。中国教育考试网官方项目页用于确认考试系列和大纲，历次真题全文如需使用应由用户提供可授权本地资料。"
+  },
+  {
+    "exam_name": "全国大学英语六级考试（笔试）官方样卷",
+    "year": "2016",
+    "level": "cet6",
+    "section": "official_sample_written",
+    "source_status": "official_public",
+    "source_path": "https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+    "notes": "来源于全国大学英语四、六级考试大纲（2016年修订版）样卷；不收录完整试题全文。"
+  }
+]

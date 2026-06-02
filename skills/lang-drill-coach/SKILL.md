@@ -5,13 +5,15 @@ description: Agent skill for language learning, exam prep, vocabulary drills, gr
 
 # Lang Drill Coach
 
+Version: `0.2.0`.
+
 ## Purpose
 
 Use this skill inside the `lang-drill-skill` project to turn an agent into a language-learning assistant. The agent owns teaching quality; scripts own structured storage, scheduling, grading write-back, logs, and recovery.
 
 Default supported languages:
 - Japanese: reusable CJT4 2023 and high-school Japanese 2020 syllabus assets are bundled.
-- English: use `data/kb/english/` and import the chosen exam syllabus before formal drills.
+- English: reusable Gaokao English 2020, CET-4 2016, and CET-6 2016 syllabus assets are bundled, with exam blueprints and recent-paper indexes.
 - Other target languages: copy `data/kb/language-template/`, create an exam folder, and provide vocabulary, grammar, and exam-blueprint assets with source year.
 
 ## Configuration Slots

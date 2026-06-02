@@ -1,5 +1,7 @@
 # LangDrill Skill 中文简介
 
+当前版本：`0.2.0`。
+
 LangDrill Skill 是一个面向语言考试和长期复习的 agent skill。它让 Codex、Claude Code、OpenClaw、Cursor 或 OpenCode 先了解学习者目标，再围绕考纲、已学内容、错题和复习周期生成训练。
 
 ## 它解决什么问题
@@ -9,7 +11,7 @@ LangDrill Skill 是一个面向语言考试和长期复习的 agent skill。它�
 ## 已有内容
 
 - 日语：内置大学日语四级 2023 考纲和高中日语 2020 课程/词法资源。
-- 英语：提供 `data/kb/english/` 入口，确认考试目标后导入对应考纲。
+- 英语：内置高考英语 2020 课标词汇/语法范围、大学英语四级/六级 2016 大纲词表、题型蓝图和近三年试卷索引。
 - 其他目标语言：复制 `data/kb/language-template/`，按模板加入词汇、语法和考试题型蓝图即可进入同一套流程。
 
 ## 用户需要自定义什么

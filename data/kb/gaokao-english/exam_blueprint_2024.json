@@ -1,0 +1,43 @@
+{
+  "exam_id": "gaokao-english",
+  "language": "English",
+  "year": 2024,
+  "source": "https://www.neea.edu.cn/html1/report/2401/499-1.htm",
+  "sections": [
+    {
+      "name": "Listening",
+      "question_types": [
+        "multiple_choice"
+      ],
+      "default_ratio": 0.2,
+      "notes": "听力理解，按高考英语常见听力任务生成。"
+    },
+    {
+      "name": "Reading",
+      "question_types": [
+        "multiple_choice",
+        "matching"
+      ],
+      "default_ratio": 0.33,
+      "notes": "阅读理解和七选五/匹配类任务。"
+    },
+    {
+      "name": "Language Use",
+      "question_types": [
+        "cloze",
+        "grammar_fill_blank"
+      ],
+      "default_ratio": 0.2,
+      "notes": "完形填空、语法填空和词汇语法运用。"
+    },
+    {
+      "name": "Writing",
+      "question_types": [
+        "application_writing",
+        "continuation_writing"
+      ],
+      "default_ratio": 0.27,
+      "notes": "应用文写作和读后续写。"
+    }
+  ]
+}
