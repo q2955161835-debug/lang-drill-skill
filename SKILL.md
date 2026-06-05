@@ -28,6 +28,8 @@ Keep user-specific data local unless it has been intentionally sanitized for pub
 4. Update `data/background/student_profile.md`.
 5. If the syllabus is missing, import local official/reliable materials or search public sources, then record source name and year.
 
+To restore the first-run settings template, run `py scripts/restore_default_settings.py`. The command backs up the current learner profile first and does not clear `data/study.db`.
+
 ## Language And Exam Assets
 
 - Japanese seeds are bundled: CJT4 2023 and high-school Japanese 2020.

@@ -39,6 +39,8 @@ Before generating questions or touching learning data:
 7. If the exam syllabus is missing, ask whether to import local files or search official/public sources. Record syllabus year in the imported asset path or notes.
 8. Ask whether to collect/import recent real papers for question-type reference.
 
+To restore the first-run settings template, run `py scripts/restore_default_settings.py`. The command backs up the current learner profile first and does not clear `data/study.db`.
+
 ## Syllabus Workflow
 
 Use official or reliable public materials whenever possible.

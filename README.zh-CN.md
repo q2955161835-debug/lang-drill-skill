@@ -37,6 +37,22 @@ py .\scripts\init_today.py
 
 运行初始化后，先补齐 `data/background/student_profile.md`。如果看到 `待确认`，请按自己的学习目标改写，不需要把它当成项目缺陷。
 
+如果需要把设置恢复到首次使用模板：
+
+```powershell
+py .\scripts\restore_default_settings.py
+```
+
+该命令会备份原 `data/background/student_profile.md` 到 `D:\0文件夹\备份\lang-drill-settings-YYYYMMDD_HHMM\`，然后只恢复学习者档案默认设置，不清空 `data/study.db`。
+
+如需用 Mimo 测试 agent 做连通性验证：
+
+```powershell
+py .\scripts\mimo_agent_smoke_test.py --api-key-file "D:\0文件夹\API key\mimo.txt"
+```
+
+脚本默认使用 `mimo-v2.5`，也可通过 `.env` 中的 `MIMO_API_KEY`、`MIMO_BASE_URL`、`MIMO_MODEL` 配置；真实 key 不会打印，也不要提交。
+
 随后导入一条材料：
 
 ```powershell
