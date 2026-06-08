@@ -4,7 +4,11 @@
 
 LangDrill Skill turns Codex, Claude Code, OpenClaw, Cursor, or OpenCode into a persistent language exam coach. It creates a learner profile, imports syllabus assets, writes exam-style drills, asks one question at a time, grades answers, and stores review state in SQLite.
 
+Current public focus: CET-4/CET-6（大学英语四级/六级）and CJT4/CJT6（大学日语四级/六级）exam preparation, including syllabus-indexed vocabulary and grammar, reading/listening/writing drill plans, exam-style question authoring, grading, wrong-answer review, and spaced repetition.
+
 LangDrill Skill 是一个可长期维护进度的语言刷题 skill：先建档，再导入考纲，随后生成考试风格练习、逐题判题、回写复习状态和错题记录。
+
+当前公开定位重点面向英语四级/六级（CET-4/CET-6，大学英语四级/六级）与日语四级/六级（CJT4/CJT6，大学日语四级/六级）备考，覆盖考纲词汇、语法范围、阅读/听力/写作训练计划、考试风格出题、判题讲解、错题复盘和间隔复习。
 
 - Chinese intro: [README.zh-CN.md](README.zh-CN.md)
 - English intro: [README.en.md](README.en.md)
