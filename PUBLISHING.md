@@ -51,9 +51,9 @@ git push -u origin master
 
 Recommended repository settings:
 
-- Description: `Agent skill for language exam drills, syllabus import, spaced review, grading, and SQLite-backed progress tracking.`
+- Description: `Agent skill for language exam drills with Japanese, Gaokao English, CET-4/CET-6 assets, spaced review, grading, and SQLite tracking.`
 - Website: Hugging Face mirror URL after upload.
-- Topics: `agent-skill`, `skill-md`, `codex`, `claude-code`, `language-learning`, `exam-prep`, `spaced-repetition`, `vocabulary`, `grammar`, `japanese`, `english`, `sqlite`.
+- Topics: `agent-skill`, `skill-md`, `codex`, `claude-code`, `language-learning`, `exam-prep`, `spaced-repetition`, `vocabulary`, `grammar`, `japanese`, `english`, `gaokao`, `cet4`, `cet6`, `sqlite`.
 
 ## Publish To Hugging Face
 
@@ -87,4 +87,4 @@ The script respects the public boundary by ignoring `.env`, `try/`, `tmp/`, `log
 
 ## Known Publication Boundary
 
-The repository includes Japanese syllabus/reference assets. Review third-party redistribution terms before uploading to public marketplaces that mirror bundled assets.
+The repository includes Japanese and English syllabus/reference assets. Recent real papers are indexed for reference only unless their redistribution rights are clear.

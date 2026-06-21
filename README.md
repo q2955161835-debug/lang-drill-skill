@@ -2,6 +2,8 @@
 
 ![LangDrill Skill cover](assets/cover.png)
 
+Current version: `0.2.0`.
+
 LangDrill Skill turns Codex, Claude Code, OpenClaw, Cursor, or OpenCode into a persistent language exam coach. It creates a learner profile, imports syllabus assets, writes exam-style drills, asks one question at a time, grades answers, and stores review state in SQLite.
 
 Current public focus: CET-4/CET-6（大学英语四级/六级）and CJT4/CJT6（大学日语四级/六级）exam preparation, including syllabus-indexed vocabulary and grammar, reading/listening/writing drill plans, exam-style question authoring, grading, wrong-answer review, and spaced repetition.
@@ -67,7 +69,7 @@ With `find-skill`, search keywords such as `language drill`, `exam prep`, `vocab
 ## Supported Targets
 
 - Japanese: bundled CJT4 2023 and high-school Japanese 2020 assets.
-- English: ready `data/kb/english/` entry; import the chosen exam syllabus before formal drills.
+- English: bundled Gaokao English 2020 curriculum assets, CET-4/CET-6 2016 syllabus assets, exam blueprints, and recent-paper indexes.
 - Other target languages: copy `data/kb/language-template/`, add official/reliable vocabulary, grammar, and exam-blueprint files, then use the same workflow.
 
 ## Core Flow
@@ -87,6 +89,7 @@ With `find-skill`, search keywords such as `language drill`, `exam prep`, `vocab
 - `skills/lang-drill-coach/`: canonical skill source.
 - `scripts/`: import, selection, persistence, grading, review, audit, and publishing utilities.
 - `data/kb/`: reusable syllabus and exam assets.
+- `data/kb/gaokao-english/`, `data/kb/cet4/`, `data/kb/cet6/`: English exam vocabulary, grammar/skill scope, blueprints, and paper indexes.
 - `data/kb/language-template/`: template for adding a new language or exam.
 - `data/study.db`: SQLite state store.
 - `doc/`: project rules, progress notes, wrong-answer notebook, and human-readable logs.

@@ -1,0 +1,44 @@
+{
+  "exam_id": "cet4",
+  "language": "English",
+  "year": 2016,
+  "source": "https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+  "sections": [
+    {
+      "name": "Writing",
+      "question_types": [
+        "essay"
+      ],
+      "default_ratio": 0.15,
+      "notes": "四级写作不少于120词。"
+    },
+    {
+      "name": "Listening",
+      "question_types": [
+        "news_report",
+        "conversation",
+        "passage"
+      ],
+      "default_ratio": 0.35,
+      "notes": "四级听力语速约120-140词/分钟。"
+    },
+    {
+      "name": "Reading",
+      "question_types": [
+        "word_bank_cloze",
+        "long_reading_matching",
+        "careful_reading"
+      ],
+      "default_ratio": 0.35,
+      "notes": "四级阅读含选词填空、长篇匹配和仔细阅读。"
+    },
+    {
+      "name": "Translation",
+      "question_types": [
+        "cn_to_en_paragraph"
+      ],
+      "default_ratio": 0.15,
+      "notes": "四级汉译英段落约140-160个汉字。"
+    }
+  ]
+}

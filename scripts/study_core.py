@@ -31,7 +31,48 @@ GLOBAL_RULES = ROOT / "AGENTS.md"
 SKILL_SRC = ROOT / "skills" / "lang-drill-coach"
 SKILL_PUBLISH_TARGET = Path(r"D:\2Folder\skills\lang-drill-coach")
 DEFAULT_MOJI_BUNDLE = ROOT / "data" / "intake"
+DEFAULT_BACKUP_ROOT = Path(r"D:\0文件夹\备份")
 NOW_FMT = "%Y-%m-%d %H:%M"
+DEFAULT_PROFILE_TEMPLATE = """# 学习者档案
+
+本文件是首次使用时的用户配置模板。`待确认` 表示需要由具体学习者填写的配置插槽，不表示项目缺陷或功能未完成。
+
+填写原则：
+
+- 按真实学习目标填写；没有确定的信息可以继续保留 `待确认`。
+- 正式生成题目前，至少应补齐目标语言、考试目标、当前水平、截止时间和每日题量/学习时长。
+- 不要在本文件写入账号密码、token、cookie、私有地址或其他敏感信息。
+- 若本文件包含真实学习经历、私人计划或个性化偏好，对外发布前应清理或替换为示例内容。
+
+目标语言：待确认
+考试目标：待确认
+考试时间：待确认
+每日题量：待确认
+个人偏好：待确认
+
+## 学习背景
+
+- 当前水平：待确认
+- 已学内容：待确认
+- 薄弱项：待确认
+- 复习基础：若用户已有学习历史但缺少准确学习日期，按保守复习计划处理。
+
+## 录入方式
+
+- 词汇录入：待确认
+- 语法录入：待确认
+- 是否导入考纲：待确认
+- 是否收集近年真题：待确认
+- 是否需要每日提醒：待确认
+
+## 已入库考纲
+
+- 大学日语四级：2023 年考纲，保存在 `data/kb/cjt4/`。
+- 高中日语：2020 年课程/词法资源，保存在 `data/kb/gaokao-japanese/`。
+- 高考英语：2020 年普通高中英语课程标准词汇/语法范围，保存在 `data/kb/gaokao-english/`。
+- 大学英语四级：2016 年全国大学英语四、六级考试大纲词表/技能范围，保存在 `data/kb/cet4/`。
+- 大学英语六级：2016 年全国大学英语四、六级考试大纲词表/技能范围，保存在 `data/kb/cet6/`。
+"""
 
 
 @dataclass
@@ -99,6 +140,32 @@ def mask_pattern_in_example(example: str, pattern: str) -> str:
 def ensure_dirs() -> None:
     for path in (DB_PATH.parent, DIARY_DIR, SUMMARY_DIR, TRUE_PAPER_DIR, WRONG_NOTEBOOK.parent, PROGRESS_LOG.parent):
         path.mkdir(parents=True, exist_ok=True)
+
+
+def restore_default_settings(
+    profile_path: Path = PROFILE_PATH,
+    backup_root: Path = DEFAULT_BACKUP_ROOT,
+    now: datetime | None = None,
+) -> dict[str, Any]:
+    stamp = (now or now_local()).strftime("%Y%m%d_%H%M")
+    backup_dir = backup_root / f"lang-drill-settings-{stamp}"
+    backup_path: Path | None = backup_dir / profile_path.name
+
+    profile_path.parent.mkdir(parents=True, exist_ok=True)
+    if profile_path.exists():
+        backup_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(profile_path, backup_path)
+    else:
+        backup_path = None
+
+    profile_path.write_text(DEFAULT_PROFILE_TEMPLATE, encoding="utf-8")
+    result = {
+        "restored": [str(profile_path)],
+        "backup_path": str(backup_path) if backup_path else "",
+        "message": "已恢复学习者档案默认设置；学习数据库未被清空。",
+    }
+    note_tool_output(result["message"])
+    return result
 
 
 def connect_db() -> sqlite3.Connection:
@@ -3504,6 +3571,13 @@ def cli_sync_progress(args: argparse.Namespace) -> None:
     emit_json({"progress_log": str(path)})
 
 
+def cli_restore_default_settings(args: argparse.Namespace) -> None:
+    profile_path = Path(args.profile_path) if args.profile_path else PROFILE_PATH
+    backup_root = Path(args.backup_root) if args.backup_root else DEFAULT_BACKUP_ROOT
+    result = restore_default_settings(profile_path=profile_path, backup_root=backup_root)
+    emit_json(result)
+
+
 def cli_publish_skill(_: argparse.Namespace) -> None:
     path = publish_skill()
     emit_json({"published_to": str(path)})
@@ -3624,6 +3698,11 @@ def build_parser() -> argparse.ArgumentParser:
     progress_parser.add_argument("--errors", action="append")
     progress_parser.add_argument("--next-steps", action="append")
     progress_parser.set_defaults(func=cli_sync_progress)
+
+    reset_parser = subparsers.add_parser("restore_default_settings", help="Restore learner settings profile to the default template.")
+    reset_parser.add_argument("--profile-path", default=None, help="Profile file to restore. Defaults to data/background/student_profile.md.")
+    reset_parser.add_argument("--backup-root", default=None, help="Backup root. Defaults to D:\\0文件夹\\备份.")
+    reset_parser.set_defaults(func=cli_restore_default_settings)
 
     publish_parser = subparsers.add_parser("publish_skill", help="Sync project-local skill to D:\\2Folder\\skills.")
     publish_parser.set_defaults(func=cli_publish_skill)

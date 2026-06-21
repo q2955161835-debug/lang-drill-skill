@@ -1,0 +1,29 @@
+[
+  {
+    "exam_name": "高考英语近三年试卷索引",
+    "year": "2023",
+    "level": "gaokao-english",
+    "section": "national_paper",
+    "source_status": "indexed_pending_fulltext",
+    "source_path": "https://www.neea.edu.cn/",
+    "notes": "近三年高考英语试卷索引；不收录完整试题全文。 官方公开全文入口未稳定定位，保留年度试卷槽位，后续可由本地官方/可靠资料导入补全。"
+  },
+  {
+    "exam_name": "高考英语近三年试卷索引",
+    "year": "2024",
+    "level": "gaokao-english",
+    "section": "national_paper",
+    "source_status": "official_public",
+    "source_path": "https://www.neea.edu.cn/html1/report/2401/499-1.htm",
+    "notes": "近三年高考英语试卷索引；不收录完整试题全文。 中国教育考试网公开2024年高考综合改革适应性测试英语科新课标试卷页面；页面图片资源：https://www.neea.edu.cn/res/Home/2401/24010498.jpg | https://www.neea.edu.cn/res/Home/2401/24010500.jpg | https://www.neea.edu.cn/res/Home/2401/24010501.jpg | https://www.neea.edu.cn/res/Home/2401/24010502.jpg | https://www.neea.edu.cn/res/Home/2401/24010503.jpg | https://www.neea.edu.cn/res/Home/2401/24010504.jpg | https://www.neea.edu.cn/res/Home/2401/24010505.jpg | https://www.neea.edu.cn/res/Home/2401/24010506.jpg | https://www.neea.edu.cn/res/Home/2401/24010507.jpg | https://www.neea.edu.cn/res/Home/2401/24010508.jpg | https://www.neea.edu.cn/res/Home/2401/24010509.jpg | https://www.neea.edu.cn/res/Home/2401/24010510.jpg | https://www.neea.edu.cn/res/Home/2401/24010512.png | https://www.neea.edu.cn/res/Home/2401/24010513.png"
+  },
+  {
+    "exam_name": "高考英语近三年试卷索引",
+    "year": "2025",
+    "level": "gaokao-english",
+    "section": "national_paper",
+    "source_status": "indexed_pending_fulltext",
+    "source_path": "https://www.neea.edu.cn/",
+    "notes": "近三年高考英语试卷索引；不收录完整试题全文。 官方公开全文入口未稳定定位，保留年度试卷槽位，后续可由本地官方/可靠资料导入补全。"
+  }
+]

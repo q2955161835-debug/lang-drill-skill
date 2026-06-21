@@ -8,6 +8,22 @@ Run commands from the project root.
 py .\scripts\init_today.py
 ```
 
+## Restore Default Settings
+
+```powershell
+py .\scripts\restore_default_settings.py
+```
+
+This backs up `data/background/student_profile.md` under `D:\0文件夹\备份\lang-drill-settings-YYYYMMDD_HHMM\`, then restores the learner profile template. It does not clear `data/study.db`.
+
+## Mimo Agent Smoke Test
+
+```powershell
+py .\scripts\mimo_agent_smoke_test.py --api-key-file "D:\0文件夹\API key\mimo.txt"
+```
+
+The script uses `MIMO_BASE_URL`, `MIMO_MODEL`, and `MIMO_API_KEY` from `.env` when present. It defaults to `mimo-v2.5` and never prints the API key.
+
 ## Import Vocabulary
 
 ```powershell
@@ -30,6 +46,15 @@ py .\scripts\import_grammar.py --file .\data\kb\<exam-id>\official_grammar_YYYY.
 ```
 
 For a new language or exam, copy the schemas from `data/kb/language-template/README.md`. JSON files named `official_vocab_*.json`, `official_grammar_*.json`, `seed_vocab.json`, or `seed_grammar.json` are automatically seeded when the database initializes.
+
+## Rebuild Official Knowledge Bases
+
+```powershell
+py .\scripts\build_official_kb.py
+py .\scripts\build_english_official_kb.py
+```
+
+The English builder imports Gaokao English, CET-4, and CET-6 vocabulary, grammar/skill scope, blueprints, and recent-paper indexes. Recent real papers are indexed as references, not bundled as full-text default assets.
 
 ## Select And Author A Session
 

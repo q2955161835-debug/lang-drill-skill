@@ -1,0 +1,57 @@
+[
+  {
+    "pattern": "听力理解：主旨、细节、隐含意义、观点态度、听力策略",
+    "meaning_cn": "听力理解能力",
+    "core_usage": "听力理解能力",
+    "example": "",
+    "source_scope": "cet4",
+    "source_type": "official_syllabus_2016",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "全国大学英语四、六级考试大纲（2016年修订版）四级考试技能要求。"
+  },
+  {
+    "pattern": "阅读理解：主旨、细节、推论、作者态度、词义猜测、篇章关系",
+    "meaning_cn": "阅读理解能力",
+    "core_usage": "阅读理解能力",
+    "example": "",
+    "source_scope": "cet4",
+    "source_type": "official_syllabus_2016",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "全国大学英语四、六级考试大纲（2016年修订版）四级考试技能要求。"
+  },
+  {
+    "pattern": "写作：中心思想、信息表达、篇章组织、语法词汇准确性、衔接手段",
+    "meaning_cn": "书面表达能力",
+    "core_usage": "书面表达能力",
+    "example": "",
+    "source_scope": "cet4",
+    "source_type": "official_syllabus_2016",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "全国大学英语四、六级考试大纲（2016年修订版）四级考试技能要求。"
+  },
+  {
+    "pattern": "翻译：汉语信息转换、段落信息完整表达、译文结构和连贯",
+    "meaning_cn": "翻译能力",
+    "core_usage": "翻译能力",
+    "example": "",
+    "source_scope": "cet4",
+    "source_type": "official_syllabus_2016",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "全国大学英语四、六级考试大纲（2016年修订版）四级考试技能要求。"
+  },
+  {
+    "pattern": "口头表达：准确性和范围、话语长短和连贯性、灵活性和适切性",
+    "meaning_cn": "口语能力",
+    "core_usage": "口语能力",
+    "example": "",
+    "source_scope": "cet4",
+    "source_type": "official_syllabus_2016",
+    "difficulty": 2,
+    "confusable_with": "",
+    "notes": "全国大学英语四、六级考试大纲（2016年修订版）四级考试技能要求。"
+  }
+]
